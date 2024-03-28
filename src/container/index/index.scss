@@ -1,7 +1,99 @@
 @use '../../style' as s;
 
-main {
-	background: s.color(dark);
-	color: s.color(light);
+main { 
 	padding: s.space(4);
-} 
+}
+
+.page {
+	display: grid;
+	gap: 14px;
+}
+
+.slide {
+	display: flex;
+	overflow: hidden;
+	border-radius: 12px;
+}
+
+.header {
+	width: 600px;
+	display: grid;
+	gap: 14px;
+	margin-bottom: 14px;
+}
+
+.header_button {
+	width: 26px;
+	height: 26px;
+}
+
+.header_bottom {
+	width: 600px;
+	border-bottom: 2px solid rgba(222, 226, 230, 1);
+	padding-bottom: 16px;
+}
+
+.header_top {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid rgba(222, 226, 230, 1);
+	padding-bottom: 16px;
+}
+
+.header_wrapper {
+	overflow: hidden;
+	transition: height 0.7s;
+	height: 0px;
+}
+
+.header_list {
+	display: flex;
+	gap: 30px;
+}
+
+.header_button {
+	width: 26px;
+	height: 26px;
+}
+
+.header_button--close {
+	background-image: url('/svg/open.svg');
+}
+
+.header_button--open {
+	background-image: url('/svg/list.svg');
+}
+
+.link {
+	color: #000;
+	text-decoration: none;
+}
+
+.color {
+	padding: 8px;
+	background: #fff;
+	border-radius: 20px;
+	width: 26px;
+	height: 26px;
+	background-image: url('/svg/arrow-reverse.svg');
+	position: absolute;
+	top: 430px;
+	left: 670px;
+}
+
+.color-2 {
+	padding: 8px;
+	background: #fff;
+	border-radius: 20px;
+	width: 26px;
+	height: 26px;
+	background-image: url('/svg/arrow.svg');
+	position: absolute;
+	top: 430px;
+	margin-left: 12px;
+}
+
+.head-list {
+	display: grid;
+	gap: 12px;
+}

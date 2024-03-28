@@ -3,8 +3,39 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 }}
 
-<main>
-	{{>heading title="Index" info=data.test}}
+<main>  
+   <div class="page">
+      <header class="header">
+         <div class="header_top">
+            <div class="header_list">
+              <a href="#" class="link">Home</a>
+              <a href="#" class="link">About</a>
+              <a href="#" class="link">Contact</a>
+            </div>
+            <button class="header_button header_button--open"></button>
+         </div>
+         <div class="header_wrapper">
+          <div class="header_bottom">
+            <div class="head-list">
+               <a href="#" class="link">Service</a>
+               <a href="#" class="link">Privacy</a>
+               <a href="#" class="link">Clients</a>
+            </div>
+          </div>
+         </div>
+      </header>
+
+      <div class="slide slider_content">
+         <img src="/svg/picture.svg" alt="">
+         <img src="/svg/picture.svg" alt="" class="init">
+         <img src="/svg/picture.svg" alt="" class="init">
+         <img src="/svg/picture.svg" alt="" class="init">
+         <img src="/svg/picture.svg" alt="" class="init">
+      </div>
+
+      <button class="color-2 slider_button--left"></button>
+      <button class="color slider_button--right"></button>
+   </div>
 </main>
 
 {{!
